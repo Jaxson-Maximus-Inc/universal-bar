@@ -10,23 +10,27 @@
 
 <body>
   <header class="w-full bg-[#101436]">
+    <!-- Desktop and Mobile Navigation -->
     <div class="flex text-white">
-      <div class="w-full max-w-[1650px] mx-auto flex items-center justify-between h-8">
+      <div class="w-full max-w-[1650px] mx-auto flex flex-col sm:flex-row items-center justify-between">
 
-        <nav class="flex items-center space-x-2 overflow-hidden">
+        <nav class="flex items-center w-full sm:w-auto sm:space-x-2 overflow-hidden">
           <!-- Link 1 -->
-          <a href="https://jaxsonmaximus.com" class="flex items-center space-x-2 bg-white h-8 py-2 px-4 cursor-pointer">
+          <a href="https://jaxsonmaximus.com"
+            class="flex items-center justify-center space-x-2 bg-white h-8 py-2 px-4 cursor-pointer w-1/4 sm:w-auto">
             <img src="/images/jm-golf-logo.svg" alt="Jaxson Maximus" class="size-7 sm:size-6">
             <span class="text-gray-900 text-xs hidden sm:inline">Jaxson Maximus</span>
           </a>
 
           <!-- Link 2 -->
-          <a href="https://wearmaximus.com" class="flex items-center h-8 py-2 px-4 cursor-pointer">
-            <img src="/images/maximus-logo-horizontal-condensed.svg" alt="Maximus" class="h-2.5">
+          <a href="https://wearmaximus.com"
+            class="flex items-center justify-center h-8 py-2 px-4 cursor-pointer w-1/4 sm:w-auto">
+            <img src="/images/maximus-logo.svg" alt="Maximus" class="h-4 inline sm:hidden">
+            <img src="/images/maximus-logo-horizontal-condensed2.svg" alt="Maximus" class="h-2.5 hidden sm:inline">
           </a>
 
           <!-- Link 3 -->
-          <div class="flex items-center space-x-2 h-8 py-2 px-4">
+          <div class="flex items-center justify-center space-x-2 h-8 py-2 px-4 w-1/4 sm:w-auto">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -34,31 +38,30 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
-            <span class="text-xs whitespace-nowrap">In Store</span>
+            <span class="text-xs whitespace-nowrap hidden sm:inline">In Store</span>
           </div>
 
           <!-- Link 4 -->
-          <button class="bg-red-600 text-white px-4 py-1 whitespace-nowrap text-sm h-8 flex items-center space-x-2">
+          <button
+            class="bg-red-600 text-white px-4 py-1 whitespace-nowrap text-xs h-8 flex items-center justify-center space-x-2 w-1/4 sm:w-auto">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
             </svg>
-            <span class="text-xs whitespace-nowrap">Book Appointment</span>
+            <span class="hidden sm:inline">Book Appointment</span>
           </button>
         </nav>
 
-
-        <!-- annoucment -->
-        <div class="text-sm hidden sm:block">
+        <!-- Announcement -->
+        <div class="text-xs hidden lg:block pr-2">
           Announcement bar to be used for various needs
         </div>
       </div>
     </div>
 
-
     <!-- Mobile Announcement Bar -->
-    <div class="md:hidden bg-white text-black text-center py-2 text-sm">
+    <div class="sm:hidden bg-white text-black text-center py-2 text-xs  border-b border-gray-200">
       Announcement bar to be used for various needs
     </div>
   </header>
