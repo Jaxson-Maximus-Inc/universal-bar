@@ -4,10 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run watch:css\" \"npm run serve\"",
+    "dev": "concurrently \"npm run watch:css\" \"npm run serve\"",
     "serve": "browser-sync start --server --files '*.html, *.css'",
-    "watch:css": "tailwindcss -i ./styles.css -o ./output.css --watch",
-    "build": "tailwindcss -i ./styles.css -o ./output.css --minify"
+    "watch:css": "tailwindcss -i ./styles.css -o ./universal-bar.css --watch",
+    "build": "tailwindcss -i ./styles.css -o ./universal-bar.css --minify"
   },
   "keywords": [],
   "author": "",
